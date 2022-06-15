@@ -22,7 +22,11 @@
   <link href="<?php echo base_url()?>assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="<?php echo base_url()?>assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="<?php echo base_url()?>assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b27e2a5a9b.js" crossorigin="anonymous"></script>
 
+
+  <!-- llamados de scripts -->
+  <script href="<?php echo base_url()?>assets/vendor/fontawesome/js/all.js"></script>
   <!-- Template Main CSS File -->
   <link href="<?php echo base_url()?>assets/css/style.css" rel="stylesheet">
 
@@ -52,13 +56,12 @@
 
       <h1 class="logo me-auto container-fluid"> 
   <a href="<?php echo base_url()?>principal/index"> <img class="img-fluid" src="<?php echo base_url()?>assets/img/iconos/logoEscuela.png" alt=""> Felipe Cubillos</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
      
 
       <nav id="navbar" class="navbar order-last order-lg-0" style="opacity: 0.9;">
         <ul>
           
-        <li class="dropdown"><a href="#"><span>Descargas</span> <i class="bi bi-chevron-down order-lg-0"></i></a>
+        <li class="dropdown"><a href="#"><span><i class="fa-solid fa-cloud-arrow-down nav_url">&nbsp;</i>Descargas</span> <i class=" order-lg-0"></i></a>
             <ul>
               <li><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong>PDF-iNDUCCIÓN FELIPE CUBILLOS </strong></a></li>
               <li><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong> INDUCCION FELIPE CUBILLOS</strong></a></li>
@@ -66,11 +69,10 @@
               <li><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong> INDUCCION FELIPE CUBILLOS</strong></a></li>
             </ul>
           </li>
-          <li><a href="<?php echo base_url()?>principal/index">Inicio</a></li>
-          <li><a href="<?php echo base_url()?>principal/profesores">Profesores</a></li>
-          <li><a href="<?php echo base_url()?>principal/proyectos">Proyectos</a></li>
-          <li><a href="<?php echo base_url()?>principal/contacto">Contactanos</a></li>
-
+          <li><a href="<?php echo base_url()?>principal/index"><i class="fa-solid fa-house">&nbsp;</i>Inicio</a></li>
+          <li><a  href="<?php echo base_url()?>principal/profesores"><i class="fa-solid fa-graduation-cap">&nbsp;</i>Profesores</a></li>
+          <li><a href="<?php echo base_url()?>principal/proyectos"><i class="fa-solid fa-person-digging">&nbsp;</i>Proyectos</a></li>
+          <li><a  href="<?php echo base_url()?>principal/contacto"><i class="fa-solid fa-message">&nbsp;</i>Contactanos</a></li>
           
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
