@@ -1,0 +1,47 @@
+
+/* opciones custom nav */
+#nav__id
+{
+    background-color: hsl(202, 22%, 90%) !important;
+    border-radius: 15px;
+    opacity: 0.8;
+    
+}
+
+#ventana_modal
+{
+    background-color: hsla(0, 0%, 96%, 0) !important;
+    
+    
+}
+#modal-content
+{
+    background-color: azure;
+}
+/* facebook config */
+.face_cont{
+    max-width: 100% !important;
+    max-height: 100% !important;
+    align-content: center;
+}
+/* end fb config */
+
+/* configuracion img index */
+.img_custom
+{
+    border-radius: 2em;
+}
+/* config titulos inicio    */
+.titulo-modal
+{
+    font-family: 'Alfa Slab One', cursive;
+}
+.bi-check-circle
+{
+    color: rgb(245, 19, 12);
+}
+#logoEscuela
+{
+    width: 2em;
+    height: 2vh;
+}
