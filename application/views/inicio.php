@@ -20,7 +20,7 @@
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
             <h3 style="padding-top: 20px !important;" class="icono-VM"> <i class="fa-regular fa-lightbulb">&nbsp;</i>Nuestra Visión</h3>
-            <p class="fst-italic">
+            <p class="parrafo">
               “Posicionarse como una escuela acogedora e inclusiva, reconocida como un
               agente de cambio en la comuna de Talca; consolidando el liderazgo
               compartido y creatividad de toda la comunidad educativa, formando niños y
@@ -28,7 +28,7 @@
               una sociedad democrática”.
             </p>
             <h3 class="icono-VM " style="padding-top: 20px;"> <i class="fa-solid fa-paper-plane">&nbsp;</i>Nuestra Misión</h3>
-            <p class="fst-italic">
+            <p class="parrafo">
               “Formar niños y niñas en el marco de una educación integral e inclusiva sobre
               la base de un currículum lúdico, con valores, sin discriminar, respetando estilos
               y ritmos de aprendizaje, en constante interacción entre nuestra comunidad
@@ -48,7 +48,7 @@
         <div class="row">
           <div class="col-lg-4 d-flex align-items-stretch content-fluid">
             <div class="content">
-              <h3 style="text-align: center !important;">¿Por que nuestra escuela?</h3>
+              <h3 class="tituloMarcado" style="text-align: center !important;">¿Por que nuestra escuela?</h3>
               <div class="content-fluid">
                 <p class="container">
                   <div class="fb-page " data-href="https://www.facebook.com/escuelafelipecubillossigallbrillaelsol" data-tabs="timeline" data-width="768px" style="margin-left: 1em;margin-right: 1em; " data-height="900px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/escuelafelipecubillossigallbrillaelsol" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/escuelafelipecubillossigallbrillaelsol">Escuela Felipe Cubillos Sigall Brilla el Sol</a></blockquote></div>
@@ -69,8 +69,8 @@
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="bx bxs-heart bx-flashing"></i>
                    
-                    <h4>Aprender a Convivir</h4>
-                    <P>La aceptación y valoración de cada miembro de la comunidad, se manifiesta
+                    <h4 class="tituloParrafo">Aprender a Convivir</h4>
+                    <P class="parrafo">La aceptación y valoración de cada miembro de la comunidad, se manifiesta
                       en la apropiación de los valores y pilares fundamentales de la escuela.
                       Comenzando por la acogida, como puerta de entrada, para el desarrollo de
                       una sana convivencia.</P>
@@ -87,8 +87,8 @@
                 <div class="col-xl-12 d-flex align-items-stretch">
                     <div class="icon-box mt-4 mt-xl-0">
                       <i class="bx bx-happy-heart-eyes bx-flashing"></i>
-                      <h4>Educación Personalizada</h4>
-                      <P>La inclusión e integración a los procesos de enseñanza y aprendizaje se
+                      <h4 class="tituloParrafo">Educación Personalizada</h4>
+                      <P class="parrafo">La inclusión e integración a los procesos de enseñanza y aprendizaje se
                         traduce en contar con instalaciones y recursos adecuados, redes de apoyo y
                         profesionales óptimos para satisfacer las necesidades académicas y
                         psicosociales de cada estudiante.</P>
@@ -99,8 +99,8 @@
               <div class="col-xl-12 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="bx bxs-home-smile bx-flashing"></i>
-                    <h4>Conciencia Ecológica</h4>
-                    <p>La valoración y compromiso por el cuidado del medioambiente en la
+                    <h4 class="tituloParrafo">Conciencia Ecológica</h4>
+                    <p class="parrafo">La valoración y compromiso por el cuidado del medioambiente en la
                       comunidad educativa se traduce en la creación de instancias de participación,
                       en armonía y con respeto por su entorno, para el desarrollo de la conciencia
                       ecológica y educación ambiental para todas y todos los estudiantes.</p>
@@ -112,8 +112,8 @@
               <div class="col-xl-12 d-flex align-items-stretch">
                   <div class="icon-box mt-4 mt-xl-0">
                     <i class="bx bxs-like  bx-flashing"></i>
-                    <h4>Autonomía y participación</h4>
-                    <p>La participación ciudadana, valoración de la diversidad y el desarrollo de la
+                    <h4 class="tituloParrafo">Autonomía y participación</h4>
+                    <p class="parrafo">La participación ciudadana, valoración de la diversidad y el desarrollo de la
                       autonomía, son parte de todos los procesos desarrollados en nuestra
                       comunidad educativa. Éstas se enmarcan en el fomento del liderazgo y
                       valores democráticos como el respeto a los derechos y deberes por todos los

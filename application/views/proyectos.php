@@ -4,8 +4,8 @@
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs" data-aos="fade-in">
       <div class="container">
-        <h2>Nuestros Proyectos </h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique illo esse, quas aperiam vero neque deleniti laboriosam blanditiis necessitatibus suscipit eum temporibus quis ullam nesciunt. Facere reprehenderit corporis nisi quam.</p>
+        <h2 class="tituloMarcado">Nuestros Proyectos </h2>
+        
       </div>
     </div><!-- End Breadcrumbs -->
 

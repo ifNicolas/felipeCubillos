@@ -34,13 +34,13 @@
   <!-- custom css -->
   <link rel="stylesheet" href="<?php echo base_url()?>assets/css/css-custom/custom.css">
   <!-- css google font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link  href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Frijole&family=Pacifico&family=Potta+One&family=Rye&family=Bungee+Shade&display=swap" rel="stylesheet">
+ 
     <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
- 
     <!-- custom js -->
     <script src="<?php echo base_url()?>assets/js/js-custom/custom.js"></script>
     <script src="<?php echo base_url()?>assets/js/js-custom/jquery-3.6.0.js"></script>
@@ -61,7 +61,7 @@
       <nav id="navbar" class="navbar order-last order-lg-0" style="opacity: 0.9;">
         <ul>
           
-        <li class="dropdown"><a href="#"><span><i class="fa-solid fa-cloud-arrow-down nav_url">&nbsp;</i>Descargas</span> <i class=" order-lg-0"></i></a>
+        <li class="dropdown"><a href="#"><span><i class="fa-solid fa-cloud-arrow-down nav_url">&nbsp;</i><p class="fuenteNav"> Descargas</p></span> <i class=" order-lg-0"></i></a>
             <ul class="container-fluid">
               <li class="container"><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong> <i class="fa-solid fa-file-circle-plus">&nbsp;</i>iNDUCCIÓN FELIPE CUBILLOS </strong></a></li>
               <li class="container"><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong> <i class="fa-solid fa-file-circle-plus">&nbsp;</i>INDUCCION FELIPE CUBILLOS</strong></a></li>
@@ -69,10 +69,10 @@
               <li class="container"><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong> <i class="fa-solid fa-file-circle-plus">&nbsp;</i>INDUCCION FELIPE CUBILLOS</strong></a></li>
             </ul>
           </li>
-          <li class="container-fluid"><a href="<?php echo base_url()?>principal/index"><i class="fa-solid fa-house">&nbsp;</i>Inicio</a></li>
-          <li class="container-fluid"><a  href="<?php echo base_url()?>principal/profesores"><i class="fa-solid fa-graduation-cap">&nbsp;</i>Profesores</a></li>
-          <li class="container-fluid"><a href="<?php echo base_url()?>principal/proyectos"><i class="fa-solid fa-person-digging">&nbsp;</i>Proyectos</a></li>
-          <li class="container-fluid"><a  href="<?php echo base_url()?>principal/contacto"><i class="fa-solid fa-message">&nbsp;</i>Contactanos</a></li>
+          <li class="container-fluid"><a href="<?php echo base_url()?>principal/index"><i class="fa-solid fa-house">&nbsp;</i><p class="fuenteNav"> Inicio</p></a></li>
+          <li class="container-fluid"><a  href="<?php echo base_url()?>principal/profesores"><i class="fa-solid fa-graduation-cap">&nbsp;</i><p class="fuenteNav"> Profesores</p></a></li>
+          <li class="container-fluid"><a href="<?php echo base_url()?>principal/proyectos"><i class="fa-solid fa-person-digging">&nbsp;</i><p class="fuenteNav"> Proyectos</p></a></li>
+          <li class="container-fluid"><a  href="<?php echo base_url()?>principal/contacto"><i class="fa-solid fa-message">&nbsp;</i><p class="fuenteNav"> Contacto</p></a></li>
           
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -80,6 +80,8 @@
 
     </div>
   </header><!-- End Header -->
+  <div class="p-1">
+  </div>
 
 
 

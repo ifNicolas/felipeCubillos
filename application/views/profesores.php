@@ -4,8 +4,8 @@
     <!-- ======= Encabezado ======= -->
     <div class="breadcrumbs">
       <div class="container">
-        <h2>Nuestros Academicos</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa unde iure, assumenda alias doloremque quo voluptatibus quas. Ad voluptatum tempora fugit nulla? Eligendi, ab temporibus accusantium molestiae fugit cupiditate. Nemo.</div>
+        <h2 class="tituloMarcado">Nuestros Academicos</h2>
+      </div>
     </div><!-- End encabezado -->
 
     <!-- ======= Profesores Seccion ======= -->

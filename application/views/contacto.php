@@ -4,8 +4,8 @@
     <!-- ======= Breadcrumbs ======= -->
     <div class="breadcrumbs" data-aos="fade-in">
       <div class="container">
-        <h2>Contacta Con Nosotros</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores deleniti consectetur repellat, eaque in pariatur sint repudiandae? Saepe, expedita, soluta officia asperiores assumenda, accusamus nihil ut totam ab nulla mollitia.  </div>
+        <h2 class="tituloMarcado">Contacta Con Nosotros</h2>
+      </div>
     </div><!-- End Breadcrumbs -->
 
     <!-- ======= Contact Section ======= -->
