@@ -36,12 +36,26 @@
 {
     font-family: 'Alfa Slab One', cursive;
 }
-.bi-check-circle
+/*vision mision*/
+.icono-VM 
 {
     color: rgb(245, 19, 12);
+    font-family: 'Bungee Shade', cursive;
 }
 #logoEscuela
 {
     width: 2em;
     height: 2vh;
 }
+
+/*edicion colores iconos*/
+.fa-lightbulb{color: rgba(232, 244, 9, 0.67);
+    text-shadow: 0 0 0.1em rgb(255, 255, 4), 0 0 0.2em rgb(238, 255, 0);
+}
+.fa-paper-plane
+{
+    color: gray;
+    text-shadow: 0 0 0.1em rgb(159, 159, 155), 0 0 0.2em rgb(83, 83, 81);
+}
+
+

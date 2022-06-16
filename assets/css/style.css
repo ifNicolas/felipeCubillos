@@ -1,10 +1,3 @@
-/**
-* Template Name: Mentor - v4.7.0
-* Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -320,7 +313,15 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 .navbar-mobile a, .navbar-mobile a:focus {
-  padding: 10px 20px;
+  padding: 10px 42px;
+  float: left ;
+  font-size: 15px;
+  color: #0c89f2;
+}
+/*css creado solo para descargas*/
+.download {
+  padding: 0px!important;
+  float: none !important;
   font-size: 15px;
   color: #0c89f2;
 }

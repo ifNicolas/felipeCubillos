@@ -2,7 +2,7 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex justify-content-center align-items-center">
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Aprende hoy,<br>Enseña mañana</h1>
+      <h1>los sueños imposibles<br>no existen</h1>
       <h2>Descubres tus talentos, explora tus orizontes</h2>
       <a href="<?php echo base_url()?>principal/contacto" class="btn-get-started container-fluid"><strong>Matriculate</strong> </a>
     </div>
@@ -19,7 +19,7 @@
             <img src="<?php echo base_url()?>assets/img/Inicio/EscuelaBanner.jpg" class="img-fluid img_custom" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
-            <h3 style="padding-top: 20px !important;" class="bi bi-check-circle"> Nuestra Visión</h3>
+            <h3 style="padding-top: 20px !important;" class="icono-VM"> <i class="fa-regular fa-lightbulb">&nbsp;</i>Nuestra Visión</h3>
             <p class="fst-italic">
               “Posicionarse como una escuela acogedora e inclusiva, reconocida como un
               agente de cambio en la comuna de Talca; consolidando el liderazgo
@@ -27,7 +27,7 @@
               niñas comprometidos con sus sellos institucionales para alcanzar el éxito en
               una sociedad democrática”.
             </p>
-            <h3 class="bi bi-check-circle" style="padding-top: 20px;"> Nuestra Misión</h3>
+            <h3 class="icono-VM " style="padding-top: 20px;"> <i class="fa-solid fa-paper-plane">&nbsp;</i>Nuestra Misión</h3>
             <p class="fst-italic">
               “Formar niños y niñas en el marco de una educación integral e inclusiva sobre
               la base de un currículum lúdico, con valores, sin discriminar, respetando estilos
@@ -133,7 +133,8 @@
     <!-- inicio pop up -->
 
      <!-- Modal -->
-     <!-- <div class="modal "  tabindex="-1" id="ventana_modal">
+<!--      
+     <div class="modal "  tabindex="-1" id="ventana_modal">
       <div class="modal-dialog" >
         <div class="modal-content " style="opacity: 0.95; background-color: #0c89f2;" id="modal-content" > 
         <div class="modal-header">
@@ -145,8 +146,8 @@
         </div>  
         </div>
       </div>
-      </div> -->
-
+      </div>
+       -->
     <!-- End PopUp Modal -->
         
    

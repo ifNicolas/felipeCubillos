@@ -62,11 +62,11 @@
         <ul>
           
         <li class="dropdown"><a href="#"><span><i class="fa-solid fa-cloud-arrow-down nav_url">&nbsp;</i>Descargas</span> <i class=" order-lg-0"></i></a>
-            <ul>
-              <li><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong>PDF-iNDUCCIÓN FELIPE CUBILLOS </strong></a></li>
-              <li><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong> INDUCCION FELIPE CUBILLOS</strong></a></li>
-              <li><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong> INDUCCION FELIPE CUBILLOS</strong></a></li>
-              <li><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong> INDUCCION FELIPE CUBILLOS</strong></a></li>
+            <ul class="container-fluid">
+              <li><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong> <i class="fa-solid fa-file-circle-plus">&nbsp;</i>iNDUCCIÓN FELIPE CUBILLOS </strong></a></li>
+              <li><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong> <i class="fa-solid fa-file-circle-plus">&nbsp;</i>INDUCCION FELIPE CUBILLOS</strong></a></li>
+              <li><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong> <i class="fa-solid fa-file-circle-plus">&nbsp;</i>INDUCCION FELIPE CUBILLOS</strong></a></li>
+              <li><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong> <i class="fa-solid fa-file-circle-plus">&nbsp;</i>INDUCCION FELIPE CUBILLOS</strong></a></li>
             </ul>
           </li>
           <li><a href="<?php echo base_url()?>principal/index"><i class="fa-solid fa-house">&nbsp;</i>Inicio</a></li>
