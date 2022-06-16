@@ -63,16 +63,16 @@
           
         <li class="dropdown"><a href="#"><span><i class="fa-solid fa-cloud-arrow-down nav_url">&nbsp;</i>Descargas</span> <i class=" order-lg-0"></i></a>
             <ul class="container-fluid">
-              <li><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong> <i class="fa-solid fa-file-circle-plus">&nbsp;</i>iNDUCCIÓN FELIPE CUBILLOS </strong></a></li>
-              <li><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong> <i class="fa-solid fa-file-circle-plus">&nbsp;</i>INDUCCION FELIPE CUBILLOS</strong></a></li>
-              <li><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong> <i class="fa-solid fa-file-circle-plus">&nbsp;</i>INDUCCION FELIPE CUBILLOS</strong></a></li>
-              <li><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong> <i class="fa-solid fa-file-circle-plus">&nbsp;</i>INDUCCION FELIPE CUBILLOS</strong></a></li>
+              <li class="container"><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong> <i class="fa-solid fa-file-circle-plus">&nbsp;</i>iNDUCCIÓN FELIPE CUBILLOS </strong></a></li>
+              <li class="container"><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong> <i class="fa-solid fa-file-circle-plus">&nbsp;</i>INDUCCION FELIPE CUBILLOS</strong></a></li>
+              <li class="container"><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong> <i class="fa-solid fa-file-circle-plus">&nbsp;</i>INDUCCION FELIPE CUBILLOS</strong></a></li>
+              <li class="container"><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong> <i class="fa-solid fa-file-circle-plus">&nbsp;</i>INDUCCION FELIPE CUBILLOS</strong></a></li>
             </ul>
           </li>
-          <li><a href="<?php echo base_url()?>principal/index"><i class="fa-solid fa-house">&nbsp;</i>Inicio</a></li>
-          <li><a  href="<?php echo base_url()?>principal/profesores"><i class="fa-solid fa-graduation-cap">&nbsp;</i>Profesores</a></li>
-          <li><a href="<?php echo base_url()?>principal/proyectos"><i class="fa-solid fa-person-digging">&nbsp;</i>Proyectos</a></li>
-          <li><a  href="<?php echo base_url()?>principal/contacto"><i class="fa-solid fa-message">&nbsp;</i>Contactanos</a></li>
+          <li class="container-fluid"><a href="<?php echo base_url()?>principal/index"><i class="fa-solid fa-house">&nbsp;</i>Inicio</a></li>
+          <li class="container-fluid"><a  href="<?php echo base_url()?>principal/profesores"><i class="fa-solid fa-graduation-cap">&nbsp;</i>Profesores</a></li>
+          <li class="container-fluid"><a href="<?php echo base_url()?>principal/proyectos"><i class="fa-solid fa-person-digging">&nbsp;</i>Proyectos</a></li>
+          <li class="container-fluid"><a  href="<?php echo base_url()?>principal/contacto"><i class="fa-solid fa-message">&nbsp;</i>Contactanos</a></li>
           
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>

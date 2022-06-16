@@ -207,9 +207,10 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   position: absolute;
   left: 30px;
+  right: 30px;
   top: calc(100% + 30px);
   margin: 0;
-  padding: 10px 0;
+  padding: 10px;
   z-index: 99;
   opacity: 0;
   visibility: hidden;
@@ -217,6 +218,7 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
   border-radius: 4px;
+  width: 285px;
 }
 .navbar .dropdown ul li {
   min-width: 200px;
@@ -313,18 +315,13 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.3s;
 }
 .navbar-mobile a, .navbar-mobile a:focus {
-  padding: 10px 42px;
+  padding: 10px 60px;
   float: left ;
+  text-align: left;
   font-size: 15px;
   color: #0c89f2;
 }
 /*css creado solo para descargas*/
-.download {
-  padding: 0px!important;
-  float: none !important;
-  font-size: 15px;
-  color: #0c89f2;
-}
 .navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
   color: #22cffa;
 }
