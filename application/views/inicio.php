@@ -2,8 +2,8 @@
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex justify-content-center align-items-center">
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
-      <h1>los sueños imposibles<br>no existen</h1>
-      <h2>Descubres tus talentos, explora tus orizontes</h2>
+      <h1 class="tituloPrincipal">los sueños imposibles<br>no existen</h1>
+      <h2 style="font-size: 15px;"><small>Escuela Felipe Cubillos Sigall Talca</small></h2>
       <a href="<?php echo base_url()?>principal/contacto" class="btn-get-started container-fluid"><strong>Matriculate</strong> </a>
     </div>
   </section><!-- End Hero -->
