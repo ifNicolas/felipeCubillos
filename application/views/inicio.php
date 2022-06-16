@@ -51,12 +51,10 @@
               <h3 class="tituloMarcado" style="text-align: center !important;">¿Por que nuestra escuela?</h3>
               <div class="content-fluid">
                 <p class="container">
-                  <div class="fb-page " data-href="https://www.facebook.com/escuelafelipecubillossigallbrillaelsol" data-tabs="timeline" data-width="768px" style="margin-left: 1em;margin-right: 1em; " data-height="900px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/escuelafelipecubillossigallbrillaelsol" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/escuelafelipecubillossigallbrillaelsol">Escuela Felipe Cubillos Sigall Brilla el Sol</a></blockquote></div>
+                  <div class="fb-page " data-href="https://www.facebook.com/escuelafelipecubillossigallbrillaelsol" data-tabs="timeline" data-width="768px" style="margin-left: 1em;margin-right: 1em; " data-height="1250px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/escuelafelipecubillossigallbrillaelsol" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/escuelafelipecubillossigallbrillaelsol">Escuela Felipe Cubillos Sigall Brilla el Sol</a></blockquote></div>
                    
                 </p> 
               </div>
-            
-
               <div class="text-center">
                 <a href="https://www.facebook.com/escuelafelipecubillossigallbrillaelsol" class="more-btn"> Ir a Facebook <i class="bx bx-chevron-right"></i></a>
               </div>
