@@ -70,7 +70,7 @@
           </div>
         </div>
       </div>
-      <!-- seccion profesores -->
+      <!-- seccion profesores  2-->
       <div class="container" data-aos="fade-up">
         <div class="row" data-aos="zoom-in" data-aos-delay="100">
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">

@@ -19,9 +19,8 @@
       
       
       <div class="container" data-aos="fade-up">
-
         <div class="row mt-5">
-
+          <!-- direcicones -->
           <div class="col-lg-4">
             <div class="info">
               <div class="address">
@@ -29,51 +28,40 @@
                 <h4>Dirección:</h4>
                 <p>6 1/2 Ote 13 1/2 Sur, Talca, Chile, 3460000</p>
               </div>
-
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Correo:</h4>
                 <p>contacto@escuelafelipecubillos.cl</p>
               </div>
-
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Numero Telefonico:</h4>
                 <p>(71) 228 0995</p>
               </div>
-
             </div>
-
           </div>
-
+          <!-- comienzo del formulario  metodo action ="formulario" -->
           <div class="col-lg-8 mt-5 mt-lg-0">
-            
             <form  action="formulario" method="post" role="form" class="php-email-form">
               <div class="row">
-
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Su Nombre" required>
                 </div>
-
                 <div class="col-md-6 form-group mt-3 mt-md-0">
                   <input type="email" class="form-control" name="email" id="email" placeholder="Su Correo" required>
                 </div>
-
               </div>
-
               <div class="form-group mt-3">
                 <input type="text" class="form-control" name="asunto" id="asunto" placeholder="Asunto" required>
               </div>
-              
               <div class="form-group mt-3">
                 <textarea class="form-control" name="message" rows="5" placeholder="Su Mensaje" required></textarea>
               </div>
-
               <!-- seccion para trabajar con la subida y bajada de archivos  -->
               <div class="form-group mt-3">
                 <input class="btn btn-success" type="file" name="archivo">
               </div>
-
+              <!-- boton de envio -->
               <div class="text-center">
                 <button type="submit" name="enviar" >Enviar Mensaje</button>
               </div>

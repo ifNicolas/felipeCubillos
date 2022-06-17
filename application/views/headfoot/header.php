@@ -50,18 +50,14 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
+  <!-- ======= nav bar ======= -->
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
-
       <h1 class="logo me-auto container-fluid"> 
-  <a href="<?php echo base_url()?>principal/index"> <img class="img-fluid" src="<?php echo base_url()?>assets/img/iconos/logoEscuela.png" alt=""> Felipe Cubillos</a></h1>
-     
-
+      <a href="<?php echo base_url()?>principal/index"> <img class="img-fluid" src="<?php echo base_url()?>assets/img/iconos/logoEscuela.png" alt=""> Felipe Cubillos</a></h1>
       <nav id="navbar" class="navbar order-last order-lg-0" style="opacity: 0.9;">
         <ul>
-          
-        <li class="dropdown"><a href="#"><span><i class="fa-solid fa-cloud-arrow-down nav_url">&nbsp;</i><p class="fuenteNav"> Descargas</p></span> <i class=" order-lg-0"></i></a>
+          <li class="dropdown"><a href="#"><span><i class="fa-solid fa-cloud-arrow-down nav_url">&nbsp;</i><p class="fuenteNav"> Descargas</p></span> <i class=" order-lg-0"></i></a>
             <ul class="container-fluid">
               <li class="container"><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong> <i class="fa-solid fa-file-circle-plus">&nbsp;</i>iNDUCCIÓN FELIPE CUBILLOS </strong></a></li>
               <li class="container"><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong> <i class="fa-solid fa-file-circle-plus">&nbsp;</i>INDUCCION FELIPE CUBILLOS</strong></a></li>
@@ -77,7 +73,6 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-
     </div>
   </header><!-- End Header -->
   <div class="p-1">

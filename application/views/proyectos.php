@@ -12,7 +12,7 @@
     <!-- ======= Events Section ======= -->
     <section id="events" class="events">
       <div class="container" data-aos="fade-up">
-
+        <!-- row -->
         <div class="row">
           <div class="col-md-6 d-flex align-items-stretch">
             <div class="card">
@@ -44,7 +44,7 @@
       </div>
       <!-- duplicado proyectos -->
       <div class="container" data-aos="fade-up">
-
+        <!-- row -->
         <div class="row">
           <div class="col-md-6 d-flex align-items-stretch">
             <div class="card">
