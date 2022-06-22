@@ -60,7 +60,7 @@
               </div>
               <!-- boton que te envia a la pagina de facebook -->
               <div class="text-center">
-                <a href="https://www.facebook.com/escuelafelipecubillossigallbrillaelsol" class="more-btn"> Ir a Facebook <i class="bx bx-chevron-right"></i></a>
+                <a href="https://www.facebook.com/escuelafelipecubillossigallbrillaelsol" class="more-btn tituloParrafo"> Ir a Facebook <i class="bx bx-chevron-right"></i></a>
               </div>
             </div>
           </div>
