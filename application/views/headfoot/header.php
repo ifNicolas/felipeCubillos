@@ -69,6 +69,7 @@
           <li class="container-fluid"><a  href="<?php echo base_url()?>principal/profesores"><i class="fa-solid fa-graduation-cap">&nbsp;</i><p class="fuenteNav"> Profesores</p></a></li>
           <li class="container-fluid"><a href="<?php echo base_url()?>principal/proyectos"><i class="fa-solid fa-person-digging">&nbsp;</i><p class="fuenteNav"> Proyectos</p></a></li>
           <li class="container-fluid"><a  href="<?php echo base_url()?>principal/contacto"><i class="fa-solid fa-message">&nbsp;</i><p class="fuenteNav"> Contacto</p></a></li>
+          <li class="container-fluid"><a  href="<?php echo base_url()?>principal/load"><i class="fa-solid fa-message">&nbsp;</i><p class="fuenteNav"> load</p></a></li>
           
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
