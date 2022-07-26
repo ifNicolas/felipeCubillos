@@ -35,10 +35,14 @@ class principal extends CI_Controller {
 		$this->load->view('formulario/contact');
 
 	}
-	public function api()
+	public function load()
 	{
 
-		$this->load->view('driveApi.php');
+		$this->load->view('sesion/load');
 
+	}
+	public function loadApi()
+	{
+		$this->load->view('sesion/loadApi');
 	}
 }
