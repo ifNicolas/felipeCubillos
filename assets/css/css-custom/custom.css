@@ -65,3 +65,22 @@
 .fuenteNav{font-family: 'Frijole', cursive;}
 .tituloPrincipal{font-family: 'Pacifico',cursive !important;}
 
+.center-form
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.center-content
+{
+    display: flex;
+    position: relative;
+    align-items: left !important;
+    justify-content: left !important;
+    padding: right 200px !important;
+}
+.espacio
+{
+    height: 90px;
+}
+

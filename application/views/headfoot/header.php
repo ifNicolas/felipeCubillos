@@ -57,14 +57,16 @@
       <a href="<?php echo base_url()?>principal/index"> <img class="img-fluid" src="<?php echo base_url()?>assets/img/iconos/logoEscuela.png" alt=""> Felipe Cubillos</a></h1>
       <nav id="navbar" class="navbar order-last order-lg-0" style="opacity: 0.9;">
         <ul>
-          <li class="dropdown"><a href="#"><span><i class="fa-solid fa-cloud-arrow-down nav_url">&nbsp;</i><p class="fuenteNav"> Descargas</p></span> <i class=" order-lg-0"></i></a>
+          
+          
+          
+          <li class="dropdown"><a href="#"><span><i class="fa-solid fa-cloud-arrow-down nav_url">&nbsp;</i><p class="fuenteNav"> Archivos</p></span> <i class=" order-lg-0"></i></a>
             <ul class="container-fluid">
-              <li class="container"><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong> <i class="fa-solid fa-file-circle-plus">&nbsp;</i>iNDUCCIÓN FELIPE CUBILLOS </strong></a></li>
-              <li class="container"><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong> <i class="fa-solid fa-file-circle-plus">&nbsp;</i>INDUCCION FELIPE CUBILLOS</strong></a></li>
-              <li class="container"><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong> <i class="fa-solid fa-file-circle-plus">&nbsp;</i>INDUCCION FELIPE CUBILLOS</strong></a></li>
-              <li class="container"><a href="https://drive.google.com/file/d/1QljoAZUVS7o8yVStinRdKgWkMc72Tv0S/view?usp=sharing"><strong> <i class="fa-solid fa-file-circle-plus">&nbsp;</i>INDUCCION FELIPE CUBILLOS</strong></a></li>
+              <li class="container"><a href="<?php echo base_url()?>principal/carga"><strong> <i class="fa-solid fa-file-circle-plus">&nbsp;</i>CARGA</strong></a></li>
+              <li class="container"><a href="<?php echo base_url()?>principal/descarga"><strong> <i class="fa-solid fa-file-circle-plus">&nbsp;</i>DESCARGA</strong></a></li>
             </ul>
           </li>
+
           <li class="container-fluid"><a href="<?php echo base_url()?>principal/index"><i class="fa-solid fa-house">&nbsp;</i><p class="fuenteNav"> Inicio</p></a></li>
           <li class="container-fluid"><a  href="<?php echo base_url()?>principal/profesores"><i class="fa-solid fa-graduation-cap">&nbsp;</i><p class="fuenteNav"> Profesores</p></a></li>
           <li class="container-fluid"><a href="<?php echo base_url()?>principal/proyectos"><i class="fa-solid fa-person-digging">&nbsp;</i><p class="fuenteNav"> Proyectos</p></a></li>
