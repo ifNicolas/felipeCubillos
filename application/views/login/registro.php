@@ -59,7 +59,7 @@
         <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
             <form>
             <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
-                <p class="lead fw-normal mb-0 me-3"><b class="tituloParrafo">Ingresa con  cuenta</b> </p>
+                <p class="lead fw-normal mb-0 me-3"><b class="tituloParrafo">Registra tu cuenta</b> </p>
                 <!-- <button type="button" class="btn btn-primary btn-floating mx-1">
                 <i class="fab fa-facebook-f"></i>
                 </button>
@@ -73,40 +73,52 @@
                 </button> -->
             </div>
 
-            <div class="divider d-flex align-items-center my-4">
+            <div class="divider d-flex align-items-center my-0">
                 <p class="text-center fw-bold mx-3 mb-0"></p>
             </div>
-
-            <!-- Email input -->
-            <div class="form-outline mb-4">
-                <input type="email" id="correo" class="form-control form-control-lg"
-                placeholder="Ingresa un Correo Valido" />
-                <label class="form-label" for="correo"><p class="tituloParrafo">Dirección De Correo</p> </label>
-            </div>
-
-            <!-- Password input -->
-            <div class="form-outline mb-3">
-                <input type="password" id="contraseña" class="form-control form-control-lg"
-                placeholder="Ingresa tu Contraseña" />
-                <label class="form-label" for="contraseña"><p class="tituloParrafo">Contraseña</p></label>
-            </div>
-
-            <div class="d-flex justify-content-between align-items-center">
-                <!-- Checkbox -->
-                <div class="form-check mb-0">
-                <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
-                <label class="form-check-label" for="form2Example3">
-                    <p class="tituloParrafo">Recuerdame</p>
-                </label>
+            <div >
+                <!-- rut input -->
+                <div class="form-outline mb-4">
+                    <input type="email" id="rut" class="form-control form-control-lg"
+                    placeholder="Ingresa tu Rut" />
+                    <label class="form-label" for="rut"><p class="tituloParrafo">Rut</p> </label>
                 </div>
-                <a href="#" class="text-body "><p class=" tituloParrafo"> Olvidaste Tu Contraseña?</p></a>
+                <!-- nombre input -->
+                <div class="form-outline mb-4">
+                    <input type="email" id="nombre" class="form-control form-control-lg"
+                    placeholder="Ingresa tu Nombre" />
+                    <label class="form-label" for="nombre"><p class="tituloParrafo">Nombre</p> </label>
+                </div>
+                <!-- apellido input -->
+                <div class="form-outline mb-4">
+                    <input type="email" id="apellido" class="form-control form-control-lg"
+                    placeholder="Ingresa tu apellido" />
+                    <label class="form-label" for="apellido"><p class="tituloParrafo">Apellido</p> </label>
+                </div>
+                <!-- correo input -->
+                <div class="form-outline mb-4">
+                    <input type="email" id="correo" class="form-control form-control-lg"
+                    placeholder="Ingresa un correo Valido" />
+                    <label class="form-label" for="correo"><p class="tituloParrafo">Dirección De correo</p> </label>
+                </div>
+
+                <!-- Password input -->
+                <div class="form-outline mb-3">
+                    <input type="password" id="contraseña" class="form-control form-control-lg"
+                    placeholder="Enter password" />
+                    <label class="form-label" for="contraseña"><p class="tituloParrafo">Contraseña</p></label>
+                </div>
             </div>
+             
+
+
+            
 
             <div class="text-center text-lg-start mt-4 pt-2">
                 <button type="button" class="btn btn-primary btn-lg"
-                style="padding-left: 2.5rem; padding-right: 2.5rem;"><p class="tituloParrafo">Ingresar</p></button>
-                <p class="small fw-bold mt-2 pt-1 mb-0">No tienes una cuenta?    <a href="<?php echo base_url()?>principal/registro"
-                    class="link-danger"><strong>Registrarse</strong> </a></p>
+                style="padding-left: 2.5rem; padding-right: 2.5rem;"><p class="tituloParrafo">Registrarse</p></button>
+                <p class="small fw-bold mt-2 pt-1 mb-0">Ya tienes una cuenta?    <a href="<?php echo base_url()?>principal/login"
+                    class="link-danger"><strong>ingresa</strong> </a></p>
             </div>
 
             </form>

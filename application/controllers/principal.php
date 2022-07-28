@@ -8,6 +8,11 @@ class principal extends CI_Controller {
 	{
 		$this->load->view('login/login');
 	}
+	//controlador registro
+	public function registro()
+	{
+		$this->load->view('login/registro');
+	}
 	
 	//end log cntrl
 
