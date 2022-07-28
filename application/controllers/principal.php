@@ -71,14 +71,14 @@ class principal extends CI_Controller {
 		$this->load->view('archivos/carga');
 		$this->load->view('headfoot/footer');
 	}
-	public function descarga()
-	{
-		$this->load->model('Site_model');
-	 	$data['tareas']=$this->Site_model->downloadArchivo("prueba1");  
+	// public function descarga()
+	// {
+	// 	$this->load->model('Site_model');
+	//  	$data['tareas']=$this->Site_model->downloadArchivo("prueba1");  
 
-		$this->load->view('headfoot/header');
-		$this->load->view('archivos/descarga');
-		$this->load->view('headfoot/footer');
-	}
+	// 	$this->load->view('headfoot/header');
+	// 	$this->load->view('archivos/descarga');
+	// 	$this->load->view('headfoot/footer');
+	// }
 
 }
