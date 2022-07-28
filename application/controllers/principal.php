@@ -3,6 +3,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class principal extends CI_Controller {
 
+	//controlador login
+	public function login()
+	{
+		$this->load->view('login/login');
+	}
+	
+	//end log cntrl
 
 	public function index()
 	{
