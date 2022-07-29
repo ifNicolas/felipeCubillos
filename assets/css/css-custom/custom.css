@@ -80,7 +80,11 @@ height: 100%;
 .tituloMarcado{font-family: 'Potta One', cursive; color: rgb(253, 2, 2);}
 .fuenteNav{font-family: 'Frijole', cursive;}
 .tituloPrincipal{font-family: 'Pacifico',cursive !important;}
-
+.logLetter
+{
+    font-family: 'Potta One', cursive !important; color: #ffff !important ;
+    
+}
 .center-form
 {
     display: flex;

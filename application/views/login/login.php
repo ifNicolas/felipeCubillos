@@ -46,8 +46,10 @@
     <!-- .custom js -->
     
 </head>
-<body class="container-fluid" style="background:#1197fb">
 
+<!-- /////inicio de contenido/////  -->
+<body class="container-fluid" style="background: rgb(143,224,241);
+background: linear-gradient(90deg, rgba(143,224,241,1) 0%, rgba(9,120,205,1) 45%, rgba(11,4,148,1) 73%);">
 <main class="vh-100">
     <section class="vh-25">
     <div class="container-fluid h-custom">
@@ -59,7 +61,7 @@
         <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
             <form>
             <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
-                <p class="lead fw-normal mb-0 me-3"><b class="tituloParrafo">Ingresa con  cuenta</b> </p>
+                <p class="lead fw-normal align-items-center my-4"><b class="logLetter" >Ingresa con tu cuenta</b> </p>
                 <!-- <button type="button" class="btn btn-primary btn-floating mx-1">
                 <i class="fab fa-facebook-f"></i>
                 </button>
@@ -79,16 +81,16 @@
 
             <!-- Email input -->
             <div class="form-outline mb-4">
+                <label ><p><b class="logLetter ">Dirección De Correo</b> </p> </label>
                 <input type="email" id="correo" class="form-control form-control-lg"
                 placeholder="Ingresa un Correo Valido" />
-                <label class="form-label" for="correo"><p class="tituloParrafo">Dirección De Correo</p> </label>
             </div>
 
             <!-- Password input -->
             <div class="form-outline mb-3">
+                <label ><p><b class="logLetter ">Contraseña</b> </p> </label>
                 <input type="password" id="contraseña" class="form-control form-control-lg"
                 placeholder="Ingresa tu Contraseña" />
-                <label class="form-label" for="contraseña"><p class="tituloParrafo">Contraseña</p></label>
             </div>
 
             <div class="d-flex justify-content-between align-items-center">
@@ -96,17 +98,18 @@
                 <div class="form-check mb-0">
                 <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
                 <label class="form-check-label" for="form2Example3">
-                    <p class="tituloParrafo">Recuerdame</p>
+                    <label ><p><b class="logLetter ">Recuerdame</b> </p> </label>
                 </label>
                 </div>
-                <a href="#" class="text-body "><p class=" tituloParrafo"> Olvidaste Tu Contraseña?</p></a>
+                <a href="#"><p> <b class="link-danger" style="font-family: 'Potta One'; font-size:12px">Olvidaste Tu Contraseña?</b></p></a>
             </div>
 
             <div class="text-center text-lg-start mt-4 pt-2">
                 <button type="button" class="btn btn-primary btn-lg"
-                style="padding-left: 2.5rem; padding-right: 2.5rem;"><p class="tituloParrafo">Ingresar</p></button>
-                <p class="small fw-bold mt-2 pt-1 mb-0">No tienes una cuenta?    <a href="<?php echo base_url()?>principal/registro"
-                    class="link-danger"><strong>Registrarse</strong> </a></p>
+                style="padding-left: 2.5rem; padding-right: 2.5rem;"><p><b class="logLetter">Ingresar</b></p></button>
+
+                <p class="small fw-bold mt-0 pt-1 mb-0 ">  <b class="logLetter">No tienes una cuenta?</b>  <a href="<?php echo base_url()?>principal/registro"
+                    class="link-danger"><strong><b style="font-family: 'Potta One'">Registrate</b></strong> </a></p>
             </div>
 
             </form>
