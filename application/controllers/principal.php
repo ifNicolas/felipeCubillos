@@ -6,6 +6,40 @@ class principal extends CI_Controller {
 	//controlador login
 	public function login()
 	{
+		
+		if($_POST['correo'] && $_POST['contraseña'])
+		{
+			//llamado modelo
+			$this->load->model('Site_model');
+			$login=$this->Site_model->login($_POST);
+
+			if($login){
+				$array=array
+				(
+					"rut"=>$login[0]->RUT,
+					"nombre"=>$login[0]->NOMBRE,
+					"apellido"=>$login[0]->APELLIDO,
+					"correo"=>$login[0]->CORREO,
+					"contraseña"=>$login[0]->CONTRASEÑA
+				);
+
+				//Guardar Tipo de Usuario
+				if(isset($login[0]->PROFESOR))
+				{
+					$array['tipo']="profesor";
+				}else if(isset($login[0]->ALUMNO))
+				{
+					$array['tipo']="alumno";
+				}
+
+				$this->session->
+				set_userdata($array);
+				print_r($_SESSION);
+			}
+			
+
+		}
+		//llamado vista
 		$this->load->view('login/login');
 	}
 	//controlador registro

@@ -1,6 +1,30 @@
 <?php
+
+use LDAP\Result;
+
 Class Site_model extends CI_Model
 {
+    function login($data)
+    {
+        $this->db->select("*");
+        $this->db->from("user");
+        $this->db->where("CORREO",$data['correo']);
+        $this->db->where("CONTRASEÑA",md5($data['contraseña']));
+
+        $query=$this->db->get();
+
+        if($query->num_rows()>0)
+        {
+           return $query->result();
+        }else
+        {
+            return NULL;
+        }
+        
+    }
+
+
+
     //funcion para subir los archivos 
     function uploadArchivo($data,$archivo)
     {

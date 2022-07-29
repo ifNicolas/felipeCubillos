@@ -59,20 +59,11 @@ background: linear-gradient(90deg, rgba(143,224,241,1) 0%, rgba(9,120,205,1) 45%
             class="img-fluid" alt="Sample image">
         </div>
         <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
-            <form>
+
+            <!-- INICIO DE FORMULARIO LOGIN -->
+            <form action="" method="post">
             <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
                 <p class="lead fw-normal align-items-center my-4"><b class="logLetter" >Ingresa con tu cuenta</b> </p>
-                <!-- <button type="button" class="btn btn-primary btn-floating mx-1">
-                <i class="fab fa-facebook-f"></i>
-                </button>
-
-                <button type="button" class="btn btn-primary btn-floating mx-1">
-                <i class="fab fa-twitter"></i>
-                </button>
-
-                <button type="button" class="btn btn-primary btn-floating mx-1">
-                <i class="fab fa-linkedin-in"></i>
-                </button> -->
             </div>
 
             <div class="divider d-flex align-items-center my-4">
@@ -82,14 +73,14 @@ background: linear-gradient(90deg, rgba(143,224,241,1) 0%, rgba(9,120,205,1) 45%
             <!-- Email input -->
             <div class="form-outline mb-4">
                 <label ><p><b class="logLetter ">Dirección De Correo</b> </p> </label>
-                <input type="email" id="correo" class="form-control form-control-lg"
+                <input type="email" id="correo" name="correo" class="form-control form-control-lg"
                 placeholder="Ingresa un Correo Valido" />
             </div>
 
             <!-- Password input -->
             <div class="form-outline mb-3">
                 <label ><p><b class="logLetter ">Contraseña</b> </p> </label>
-                <input type="password" id="contraseña" class="form-control form-control-lg"
+                <input type="password" id="contraseña" name="contraseña" class="form-control form-control-lg"
                 placeholder="Ingresa tu Contraseña" />
             </div>
 
@@ -105,7 +96,7 @@ background: linear-gradient(90deg, rgba(143,224,241,1) 0%, rgba(9,120,205,1) 45%
             </div>
 
             <div class="text-center text-lg-start mt-4 pt-2">
-                <button type="button" class="btn btn-primary btn-lg"
+                <button type="submits" class="btn btn-primary btn-lg"
                 style="padding-left: 2.5rem; padding-right: 2.5rem;"><p><b class="logLetter">Ingresar</b></p></button>
 
                 <p class="small fw-bold mt-0 pt-1 mb-0 ">  <b class="logLetter">No tienes una cuenta?</b>  <a href="<?php echo base_url()?>principal/registro"
