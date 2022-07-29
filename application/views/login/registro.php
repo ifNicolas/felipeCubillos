@@ -49,7 +49,7 @@
 <body  class="container-fluid" style="  background: rgb(13,65,190);
 background: linear-gradient(90deg, rgba(13,65,190,1) 0%, rgba(44,158,246,1) 25%, rgba(6,39,161,1) 62%, rgba(5,43,133,1) 82%, rgba(3,28,83,1) 100%);  ">
 
-<main class="vh-100">
+<main class="vh-100 ">
     <section class="vh-25">
     <div class="container-fluid h-custom">
         <div class="row d-flex justify-content-center align-items-center h-100">
