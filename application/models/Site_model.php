@@ -6,16 +6,21 @@ Class Site_model extends CI_Model
 {
     function login($data)
     {
+        /**hacemos la consulta a la BD */
         $this->db->select("*");
         $this->db->from("user");
         $this->db->where("CORREO",$data['correo']);
-        $this->db->where("CONTRASEÑA",md5($data['contraseña']));
+        $this->db->where("CONTRASEÑA",$data['contraseña']);
 
+        /** genera la obtencion de datos*/
         $query=$this->db->get();
 
+        /**hace la consulta que verifica si hay columndas disponibles */
         if($query->num_rows()>0)
         {
+            //retorna el resultado de la consulta
            return $query->result();
+          
         }else
         {
             return NULL;

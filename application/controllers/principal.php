@@ -7,9 +7,9 @@ class principal extends CI_Controller {
 	public function login()
 	{
 		
-		if($_POST['correo'] && $_POST['contraseña'])
+		if(isset($_POST['correo']) && isset($_POST['contraseña']))
 		{
-			//llamado modelo
+			
 			$this->load->model('Site_model');
 			$login=$this->Site_model->login($_POST);
 
@@ -23,25 +23,44 @@ class principal extends CI_Controller {
 					"contraseña"=>$login[0]->CONTRASEÑA
 				);
 
-				//Guardar Tipo de Usuario
-				if(isset($login[0]->PROFESOR))
-				{
-					$array['tipo']="profesor";
-				}else if(isset($login[0]->ALUMNO))
-				{
-					$array['tipo']="alumno";
-				}
+				
+				// if(isset($login[0]->PROFESOR))
+				// {
+				// 	$array['tipo']="profesor";
+				// }else if(isset($login[0]->ALUMNO))
+				// {
+				// 	$array['tipo']="alumno";
+				// }
 
-				$this->session->
-				set_userdata($array);
+				// $this->session->
+				// set_userdata($array);
 				print_r($_SESSION);
 			}
 			
 
 		}
 		//llamado vista
-		$this->load->view('login/login');
+		$this->loadViews('login/login');
+	
 	}
+	public function loadViews($view,$data=null)
+	{
+		 if($_SESSION)
+		 {
+		 	$this->load->view('headfoot/header');
+		 	$this->load->view('login/login');
+		 	$this->load->view('headfoot/footer');
+
+		 	print_r($_SESSION);
+
+		 }else
+		 {
+		 	redirect(base_url()."login","location");
+		 }
+		
+	}
+
+
 	//controlador registro
 	public function registro()
 	{

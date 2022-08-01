@@ -74,14 +74,14 @@ background: linear-gradient(90deg, rgba(143,224,241,1) 0%, rgba(9,120,205,1) 45%
             <div class="form-outline mb-4">
                 <label ><p><b class="logLetter ">Dirección De Correo</b> </p> </label>
                 <input type="email" id="correo" name="correo" class="form-control form-control-lg"
-                placeholder="Ingresa un Correo Valido" />
+                placeholder="Ingresa un Correo Valido"  require/>
             </div>
 
             <!-- Password input -->
             <div class="form-outline mb-3">
                 <label ><p><b class="logLetter ">Contraseña</b> </p> </label>
                 <input type="password" id="contraseña" name="contraseña" class="form-control form-control-lg"
-                placeholder="Ingresa tu Contraseña" />
+                placeholder="Ingresa tu Contraseña"  require/>
             </div>
 
             <div class="d-flex justify-content-between align-items-center">
