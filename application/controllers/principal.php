@@ -3,77 +3,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class principal extends CI_Controller {
 
-	//controlador login
-	public function login()
-	{
-		
-		if(isset($_POST['correo']) && isset($_POST['contraseña']))
-		{
-			
-			$this->load->model('Site_model');
-			$login=$this->Site_model->login($_POST);
-
-			if($login){
-				$array=array
-				(
-					"rut"=>$login[0]->RUT,
-					"nombre"=>$login[0]->NOMBRE,
-					"apellido"=>$login[0]->APELLIDO,
-					"correo"=>$login[0]->CORREO,
-					"contraseña"=>$login[0]->CONTRASEÑA
-				);
-
-				
-				// if(isset($login[0]->PROFESOR))
-				// {
-				// 	$array['tipo']="profesor";
-				// }else if(isset($login[0]->ALUMNO))
-				// {
-				// 	$array['tipo']="alumno";
-				// }
-
-				// $this->session->
-				// set_userdata($array);
-				print_r($_SESSION);
-			}
-			
-
-		}
-		//llamado vista
-		$this->loadViews('login/login');
-	
-	}
-	public function loadViews($view,$data=null)
-	{
-		 if($_SESSION)
-		 {
-		 	$this->load->view('headfoot/header');
-		 	$this->load->view('login/login');
-		 	$this->load->view('headfoot/footer');
-
-		 	print_r($_SESSION);
-
-		 }else
-		 {
-		 	redirect(base_url()."login","location");
-		 }
-		
-	}
-
-
-	//controlador registro
-	public function registro()
-	{
-		$this->load->view('login/registro');
-	}
-	
-	//end log cntrl
-
+	//controladores basicos
 	public function index()
 	{
-		$this->load->view('headfoot/header');
-		$this->load->view('inicio');
-		$this->load->view('headfoot/footer');
+		$this->loadViews("inicio");
 	}
 	// aca van los controladores de las siguientes vistas
 	public function profesores()
@@ -100,7 +33,73 @@ class principal extends CI_Controller {
 		$this->load->view('formulario/contact');
 
 	}
+	//end ctl basic
 
+	//controlador login
+	public function login()
+	{
+		if($_POST['correo'] && $_POST['contraseña'])
+		{
+			
+			$this->load->model('Site_model');
+			$login=$this->Site_model->login($_POST);
+
+			if($login){
+				$array=array
+				(
+					"rut"=>$login[0]->RUT,
+					"nombre"=>$login[0]->NOMBRE,
+					"apellido"=>$login[0]->APELLIDO,
+					"correo"=>$login[0]->CORREO,
+					"contraseña"=>$login[0]->CONTRASEÑA
+				);
+				// if(isset($login[0]->PROFESOR))
+				// {
+				// 	$array['tipo']="profesor";
+				// }else if(isset($login[0]->ALUMNO))
+				// {
+				// 	$array['tipo']="alumno";
+				// }
+				
+				/**aca se toman los datos de el inicio de sesion para lograr el logeo */
+				$this->session->set_userdata($array);
+			}
+		}
+		//llamado vista
+		$this->loadViews('login/login');	
+	}
+
+	//controlador carga de imagen login obligatorio
+	public function loadViews($view,$data=null)
+	{
+		 if($_SESSION['correo'])
+		 {
+			$this->load->view('headfoot/header');
+			$this->load->view('inicio');
+			$this->load->view('headfoot/footer');
+		 }else
+		 {
+			if($view=="login/login")
+			{
+				$this->load->view("$view");
+			}else
+			{
+				redirect(base_url()."principal/login","location");
+			}
+		}
+
+	}
+
+
+	//controlador registro
+	public function registro()
+	{
+		$this->load->view('login/registro');
+	}
+	
+	//end log cntrl
+
+	
 	//inicio controlador de descargas
 
 	public function carga()
