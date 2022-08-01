@@ -6,7 +6,13 @@ class principal extends CI_Controller {
 	//controladores basicos
 	public function index()
 	{
-		$this->loadViews("inicio");
+		$this->loadViews('inicio');
+	}
+	public function inicio()
+	{
+		$this->load->view('headfoot/header');
+		$this->load->view('inicio');
+		$this->load->view('headfoot/footer');	
 	}
 	// aca van los controladores de las siguientes vistas
 	public function profesores()
@@ -74,32 +80,35 @@ class principal extends CI_Controller {
 	{
 		 if($_SESSION['correo'])
 		 {
+			
+		
+			//  	redirect(base_url()."principal","location");
+
 			$this->load->view('headfoot/header');
 			$this->load->view('inicio');
 			$this->load->view('headfoot/footer');
-		 }else
-		 {
+		 }
+		 else
+		 {	
 			if($view=="login/login")
 			{
 				$this->load->view("$view");
-			}else
-			{
+			}
+			else
+			{;
 				redirect(base_url()."principal/login","location");
 			}
-		}
+		 }
+
 
 	}
-
 
 	//controlador registro
 	public function registro()
 	{
 		$this->load->view('login/registro');
 	}
-	
-	//end log cntrl
 
-	
 	//inicio controlador de descargas
 
 	public function carga()

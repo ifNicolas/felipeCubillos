@@ -111,7 +111,7 @@ background: linear-gradient(90deg, rgba(13,65,190,1) 0%, rgba(44,158,246,1) 25%,
                 <div class="form-outline mb-3">
                 <p class="lead fw-normal mb-0 me-3"><b class="logLetter">Cotraseña</b> </p>
                     <input type="password" id="contraseña" class="form-control form-control-lg"
-                    placeholder="Enter password" />
+                    placeholder="ingresa una contraseña" />
 
                 </div>
             </div>
