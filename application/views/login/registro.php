@@ -59,68 +59,58 @@ background: linear-gradient(90deg, rgba(13,65,190,1) 0%, rgba(44,158,246,1) 25%,
             class="img-fluid " alt="logo-escuela">
         </div>
         <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1 container-fluid">
-            <form class="container-fluid">
-            <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
-                <p class="lead fw-normal mb-0 me-3"><b class="logLetter">Registra tu cuenta</b> </p>
-                <!-- <button type="button" class="btn btn-primary btn-floating mx-1">
-                <i class="fab fa-facebook-f"></i>
-                </button>
-
-                <button type="button" class="btn btn-primary btn-floating mx-1">
-                <i class="fab fa-twitter"></i>
-                </button>
-
-                <button type="button" class="btn btn-primary btn-floating mx-1">
-                <i class="fab fa-linkedin-in"></i>
-                </button> -->
-            </div>
-
-            <div class="divider d-flex align-items-center my-0">
-                <p class="text-center fw-bold mx-3 mb-0"> <br></p>
-            </div>
-            <div >
-                <!-- rut input -->
-                <br>
-                <div class="form-outline mb-4">
-                    <p class="lead fw-normal mb-0 me-3"><b class="logLetter">Rut</b> </p>
-                    <input type="email" id="rut" class="form-control form-control-lg"
-                    placeholder="Ingresa tu Rut" />
+            
+            <!--inicio Formulario-->
+            <form  action="" method="post" class="container-fluid">
+                <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
+                    <p class="lead fw-normal mb-0 me-3"><b class="logLetter">Registra tu cuenta</b> </p>
                 </div>
-                <!-- nombre input -->
-                <div class="form-outline mb-4">
-                    <p class="lead fw-normal mb-0 me-3"><b class="logLetter">Nombre</b> </p>
-                    <input type="email" id="nombre" class="form-control form-control-lg"
-                    placeholder="Ingresa tu Nombre" />
+                <div class="divider d-flex align-items-center my-0">
+                    <p class="text-center fw-bold mx-3 mb-0"> <br></p>
                 </div>
-                <!-- apellido input -->
-                <div class="form-outline mb-4">
-                <p class="lead fw-normal mb-0 me-3"><b class="logLetter">Apellido</b> </p>
-                    <input type="email" id="apellido" class="form-control form-control-lg"
-                    placeholder="Ingresa tu apellido" />
+                <div >
+                    <!-- rut input -->
+                    <br>
+                    <div class="form-outline mb-4">
+                        <p class="lead fw-normal mb-0 me-3"><b class="logLetter">Rut</b> </p>
+                        <input type="text" id="rut" name="rut" class="form-control form-control-lg"
+                        placeholder="Ingresa tu Rut"  require/>
+                    </div>
+                    <!-- nombre input -->
+                    <div class="form-outline mb-4">
+                        <p class="lead fw-normal mb-0 me-3"><b class="logLetter">Nombre</b> </p>
+                        <input type="text" id="nombre" name="nombre" class="form-control form-control-lg"
+                        placeholder="Ingresa tu Nombre" require />
+                    </div>
+                    <!-- apellido input -->
+                    <div class="form-outline mb-4">
+                    <p class="lead fw-normal mb-0 me-3"><b class="logLetter">Apellido</b> </p>
+                        <input type="text" id="apellido" name="apellido" class="form-control form-control-lg"
+                        placeholder="Ingresa tu apellido" require/>
 
+                    </div>
+                    <!-- correo input -->
+                    <div class="form-outline mb-4">
+                    <p class="lead fw-normal mb-0 me-3"><b class="logLetter">Correo</b> </p>
+                        <input type="email" id="correo" name="correo" class="form-control form-control-lg"
+                        placeholder="Ingresa un correo Valido" require />
+
+                    </div>
+
+                    <!-- Password input -->
+                    <div class="form-outline mb-3">
+                    <p class="lead fw-normal mb-0 me-3"><b class="logLetter">Cotraseña</b> </p>
+                        <input type="password" id="contraseña" name="contraseña" class="form-control form-control-lg"
+                        placeholder="ingresa una contraseña" require/>
+
+                    </div>
                 </div>
-                <!-- correo input -->
-                <div class="form-outline mb-4">
-                <p class="lead fw-normal mb-0 me-3"><b class="logLetter">Correo</b> </p>
-                    <input type="email" id="correo" class="form-control form-control-lg"
-                    placeholder="Ingresa un correo Valido" />
-
+                <div class="text-center text-lg-start mt-4 pt-2">
+                    <button type="submits" class="btn btn-primary btn-lg"
+                    style="padding-left: 2.5rem; padding-right: 2.5rem;"><p > <b class="logLetter"> Registrarse</b></p></button>
+                    <p class="small fw-bold mt-2 pt-1 mb-0"><b style="color:white">Ya tienes una cuenta?</b>     <a href="<?php echo base_url()?>principal/login"
+                        class="link-danger"><strong>ingresa</strong> </a></p>
                 </div>
-
-                <!-- Password input -->
-                <div class="form-outline mb-3">
-                <p class="lead fw-normal mb-0 me-3"><b class="logLetter">Cotraseña</b> </p>
-                    <input type="password" id="contraseña" class="form-control form-control-lg"
-                    placeholder="ingresa una contraseña" />
-
-                </div>
-            </div>
-            <div class="text-center text-lg-start mt-4 pt-2">
-                <button type="button" class="btn btn-primary btn-lg"
-                style="padding-left: 2.5rem; padding-right: 2.5rem;"><p > <b class="logLetter"> Registrarse</b></p></button>
-                <p class="small fw-bold mt-2 pt-1 mb-0"><b style="color:white">Ya tienes una cuenta?</b>     <a href="<?php echo base_url()?>principal/login"
-                    class="link-danger"><strong>ingresa</strong> </a></p>
-            </div>
 
             </form>
         </div>

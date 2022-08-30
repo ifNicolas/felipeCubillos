@@ -54,7 +54,7 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
       <h1 class="logo me-auto container-fluid"> 
-      <a href="<?php echo base_url()?>principal/index"> <img class="img-fluid" src="<?php echo base_url()?>assets/img/iconos/logoEscuela.png" alt=""> Felipe Cubillos</a></h1>
+      <a href="<?php echo base_url()?>principal/inicioadmin"> <img class="img-fluid" src="<?php echo base_url()?>assets/img/iconos/logoEscuela.png" alt=""> Felipe Cubillos</a></h1>
       <nav id="navbar" class="navbar order-last order-lg-0" style="opacity: 0.9;">
         <ul>
           
@@ -62,20 +62,12 @@
           
           <li class="dropdown"><a href="#"><span><i class="fa-solid fa-cloud-arrow-down nav_url">&nbsp;</i><p class="fuenteNav"> Otros</p></span> <i class=" order-lg-0"></i></a>
             <ul class="container-fluid">
-              <li class="container"><a href="<?php echo base_url()?>principal/descarga"><strong> <i class="fa-solid fa-file-circle-plus">&nbsp;</i>DESCARGA</strong></a></li>
-              <br>
-              <br>
-
-              <li class="container"><a href="<?php echo base_url()?>principal/login"><strong> <i class="fa-solid fa-house">&nbsp;</i>Iniciar Sesion</strong></a></li>
-              <br>
               <li class="container"><a href="<?php echo base_url()?>principal/endsession"><strong> <i class="fa-solid fa-house">&nbsp;</i>Cerrar Session</strong></a></li>
             </ul>
           </li>
 
-          <li class="container-fluid"><a href="<?php echo base_url()?>principal/inicio"><i class="fa-solid fa-house">&nbsp;</i><p class="fuenteNav"> Inicio</p></a></li>
-          <li class="container-fluid"><a  href="<?php echo base_url()?>principal/profesores"><i class="fa-solid fa-graduation-cap">&nbsp;</i><p class="fuenteNav"> Profesores</p></a></li>
-          <li class="container-fluid"><a href="<?php echo base_url()?>principal/proyectos"><i class="fa-solid fa-person-digging">&nbsp;</i><p class="fuenteNav"> Proyectos</p></a></li>
-          <li class="container-fluid"><a  href="<?php echo base_url()?>principal/contacto"><i class="fa-solid fa-message">&nbsp;</i><p class="fuenteNav"> Contacto</p></a></li>
+          <li class="container-fluid"><a href="<?php echo base_url()?>principal/carga"><i class="fa-solid fa-house">&nbsp;</i><p class="fuenteNav"> Cargar Archivo</p></a></li>
+
           
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>

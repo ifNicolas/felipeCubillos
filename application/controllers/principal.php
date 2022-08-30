@@ -6,7 +6,10 @@ class principal extends CI_Controller {
 	//controladores basicos
 	public function index()
 	{
-		$this->loadViews('inicio');
+		$this->load->view('headfoot/header');
+		$this->load->view('inicio');
+		$this->load->view('headfoot/footer');
+		print_r($_SESSION);
 	}
 	public function inicio()
 	{
@@ -39,12 +42,35 @@ class principal extends CI_Controller {
 		$this->load->view('formulario/contact');
 
 	}
-	//end ctl basic
+	//vistas para admin
+	public function inicioadmin()
+	{
+		if(isset($_SESSION['correo']))
+		{
+			$this->load->view('admin/headfoot/header');
+			$this->load->view('admin/inicioadmin');
+			$this->load->view('admin/headfoot/footer');
+		}else
+		{
+			redirect(base_url()."principal/login","location");
+		}
+		
+	}
 
+
+
+	//----------------------------------Inicio funciones------------------------------------------------//
+	//end ctl basic
+	public function endsession()
+	{
+		session_destroy();
+		redirect(base_url()."principal/index","location");
+	}
 	//controlador login
 	public function login()
 	{
-		if($_POST['correo'] && $_POST['contraseña'])
+		session_start();
+		if(isset($_POST['correo']) && (isset($_POST['contraseña'])))
 		{
 			
 			$this->load->model('Site_model');
@@ -59,6 +85,7 @@ class principal extends CI_Controller {
 					"correo"=>$login[0]->CORREO,
 					"contraseña"=>$login[0]->CONTRASEÑA
 				);
+				
 				// if(isset($login[0]->PROFESOR))
 				// {
 				// 	$array['tipo']="profesor";
@@ -67,26 +94,27 @@ class principal extends CI_Controller {
 				// 	$array['tipo']="alumno";
 				// }
 				
-				/**aca se toman los datos de el inicio de sesion para lograr el logeo */
+				//aca se toman los datos de el inicio de sesion para lograr el logeo 
 				$this->session->set_userdata($array);
+				print_r($_SESSION);
 			}
 		}
-		//llamado vista
+		//llamado funcion loadviews
+		
 		$this->loadViews('login/login');	
 	}
 
 	//controlador carga de imagen login obligatorio
 	public function loadViews($view,$data=null)
 	{
-		 if($_SESSION['correo'])
+		 if((isset($_SESSION['correo'])))
 		 {
-			
-		
-			//  	redirect(base_url()."principal","location");
 
-			$this->load->view('headfoot/header');
-			$this->load->view('inicio');
-			$this->load->view('headfoot/footer');
+			redirect(base_url()."principal/inicioadmin","location");
+
+			$this->load->view('admin/headfoot/header');
+			$this->load->view('admin/inicioadmin');
+			$this->load->view('admin/headfoot/footer');
 		 }
 		 else
 		 {	
@@ -95,7 +123,7 @@ class principal extends CI_Controller {
 				$this->load->view("$view");
 			}
 			else
-			{;
+			{
 				redirect(base_url()."principal/login","location");
 			}
 		 }
@@ -103,55 +131,68 @@ class principal extends CI_Controller {
 
 	}
 
-	//controlador registro
-	public function registro()
-	{
-		$this->load->view('login/registro');
-	}
-
 	//inicio controlador de descargas
-
 	public function carga()
 	{
-		
 		//comienzo con controlador para envio de archivo a la bd
+		if((isset($_SESSION['correo'])))
+		{
+			if($_POST)
+			{
+				$config['upload_path']          = './uploads/';
+				$config['allowed_types']        = 'gif|jpg|png';
+				//$config['max_size']             = 100;
+				//$config['max_width']            = 1024;
+				//$config['max_height']           = 768;
+				$config['file_name']=uniqid().$_FILES['archivo']['name'];
+				$this->load->library('upload', $config);
+			if ( ! $this->upload->do_upload('archivo'))
+			{
+					echo "error";
+			}
+			else
+			{
+				$this->load->model('Site_model');
+				$this->Site_model->uploadArchivo($_POST,$config['file_name']);
+			}
+			}
+			else
+			{
+				echo null;
+			}
+				// llamado a la vista de la views  descarga
+				$this->load->view('admin/headfoot/header');
+				$this->load->view('admin/carga');
+				$this->load->view('admin/headfoot/footer');
+
+		}else
+		{
+			redirect(base_url()."principal/login","location");	
+		}
 		
-		if($_POST)
-		{
-			$config['upload_path']          = './uploads/';
-			$config['allowed_types']        = 'gif|jpg|png';
-			//$config['max_size']             = 100;
-			//$config['max_width']            = 1024;
-			//$config['max_height']           = 768;
-			$config['file_name']=uniqid().$_FILES['archivo']['name'];
-			$this->load->library('upload', $config);
-				if ( ! $this->upload->do_upload('archivo'))
-				{
-						echo "error";
-				}
-				else
-				{
-					$this->load->model('Site_model');
-					$this->Site_model->uploadArchivo($_POST,$config['file_name']);
-				}
-		}
-		else
-		{
-			echo null;
-		}
-		// llamado a la vista de la views  descarga
+		
+	}
+	 public function descarga()
+	{
+		$this->load->model('Site_model');
+	 	$data['tareas']=$this->Site_model->downloadArchivo("prueba1");  
+
 		$this->load->view('headfoot/header');
-		$this->load->view('archivos/carga');
+		$this->load->view('archivos/descarga');
 		$this->load->view('headfoot/footer');
 	}
-	// public function descarga()
-	// {
-	// 	$this->load->model('Site_model');
-	//  	$data['tareas']=$this->Site_model->downloadArchivo("prueba1");  
 
-	// 	$this->load->view('headfoot/header');
-	// 	$this->load->view('archivos/descarga');
-	// 	$this->load->view('headfoot/footer');
-	// }
+	/*public function login()
+	{
+		session_start();
+		if(isset($_SESSION['']))
+
+		$usuario=$_POST['correo'];
+		$usuario=$_POST['contraseña'];
+
+		
+	
+	}*/
+
 
 }
