@@ -53,4 +53,4 @@ $route['default_controller'] = 'principal';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
-$routes->get('/','principal/inicio');
+$routes->get('/','principal/inicioAdmin');

@@ -5,7 +5,6 @@ use App\Controllers\BaseController;
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class principal extends BaseController {
-
 	//controladores basicos
 	public function inicio()
 	{
@@ -95,26 +94,27 @@ class principal extends BaseController {
 		 if((isset($_SESSION['correo'])))
 		 {
 			 
-			redirect(base_url()."inicioadmin","location");
-
-			$this->load->view('admin/headfoot/header');
-			$this->load->view('admin/inicioadmin');
-			$this->load->view('admin/headfoot/footer');
-		}
-		 else
-		 {	
-			 if($view=="login/login")
-			{
-				$this->load->view("$view");
+			 redirect(base_url()."inicioadmin","location");
+			 
+			 $this->load->view('admin/headfoot/header');
+			 $this->load->view('admin/inicioadmin');
+			 $this->load->view('admin/headfoot/footer');
 			}
 			else
-			{
-				redirect(base_url()."login","location");
+			{	
+			 if($view=="login/login")
+			 {
+				 $this->load->view("$view");
+				}
+				else
+				{
+					redirect(base_url()."login","location");
+				}
 			}
-		 }
-
-
+			
+			
 		}
+	
 
 	//inicio controlador de descargas
 	public function carga()
@@ -163,16 +163,6 @@ class principal extends BaseController {
 	
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	//comienzo con controlador para envio de archivo a la bd
 	// if((isset($_SESSION['correo'])))
 	// {
@@ -210,12 +200,7 @@ class principal extends BaseController {
 		// }
 		
 		
-	}
-	public function descarga()
-	{
-		$this->load->view('headfoot/header');
-		$this->load->view('archivos/descarga');
-		$this->load->view('headfoot/footer');
-		
-	}
+	//}
+
 	
+}
