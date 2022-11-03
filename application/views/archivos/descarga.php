@@ -8,19 +8,24 @@
   </div>
 </div><!-- End Breadcrumbs -->
 
-<div class="row">
 <?php
-foreach ($archivo as $a)
+
 ?>
 
-    <div class="col-md-4">
-        <div class="row">
-            <? =  $a->NOMBRE ?>
-        </div>
-        <div class="row">
-            <? =  $a->DESCRIPCION ?>
-        </div>
-    </div>
+<div class="caja">
+  <?php
+  		if($dir = opendir('uploads'))
+      {
+        while($archivos = readdir($dir))
+        {
+          if($archivos != '.' && $archivos != '..' )
+          {
+            echo "Achivo : <strong>$archivos</strong><br/>";
+          }
+
+        }
+      }
+  ?>
 </div>
 
 

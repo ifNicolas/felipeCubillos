@@ -68,7 +68,6 @@
 
               <li class="container"><a href="<?php echo base_url()?>principal/login"><strong> <i class="fa-solid fa-house">&nbsp;</i>Iniciar Sesion</strong></a></li>
               <br>
-              <li class="container"><a href="<?php echo base_url()?>principal/endsession"><strong> <i class="fa-solid fa-house">&nbsp;</i>Cerrar Session</strong></a></li>
             </ul>
           </li>
 

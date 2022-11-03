@@ -1,10 +1,4 @@
-
-
-#condicion para eliminar index.php en la url
-RewriteEngine on
-RewriteBase /felipeCubillos
+RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule .* index.php/$0 [PT,L]
-
-
+RewriteRule ^(.*)$ /index.php?/$1 [L]

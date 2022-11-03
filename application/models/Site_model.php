@@ -4,6 +4,7 @@ use LDAP\Result;
 
 Class Site_model extends CI_Model
 {
+    //CONSULTA PARA BUSCAR DATOS DE LOGIN EN BD
      function login($data)
     {
         //hacemos la consulta a la BD 
@@ -28,40 +29,24 @@ Class Site_model extends CI_Model
          
     }
 
-    //funcion registro
 
-    /*function registro($data)
-    {
-        $array=array
-        (
-            "RUT"=>$data['rut'],
-            "NOMBRE"=>$data['nombre'],
-            "APELLIDO"=>$data['apellido'],
-            "CORREO"=>$data['correo'],
-            "CONTRASEÑA"=>$data['contraseña']
-        );
-        $this->db->insert("user",$array);
-    }**/
-
-
-    //funcion para subir los archivos 
+    //CONSULTA PARA SUBIR ARCHIOS A LA BD 
     function uploadArchivo($data,$archivo)
     {
          $array=array
          (  
             "TITULO" =>$data['titulo'],
-            "DESCRIPCION"=>$data['descripcion'],
             "ARCHIVO"=>$archivo
          );
          $this->db->insert("archivos",$array);
     }
 
-    
-     function downloadArchivo($titulo)
+    //CONSULTA PARA LISTAR LOS ARCHIVOS 
+     function downloadArchivo()
      {
         $this->db->select("*");
         $this->db->from("archivos");
-        $this->db->where("TITULO",$titulo);
+        //$this->db->where("TITULO",$titulo);
         $this->db->order_by("ID","ASC");
 
         $query =$this->bd->get();
@@ -70,6 +55,7 @@ Class Site_model extends CI_Model
         if($query->num_rows()>0)
         {
              return $query->result();
+             print_r($query);
         }else
          {
             return NULL;

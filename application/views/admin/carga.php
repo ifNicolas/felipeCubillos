@@ -20,23 +20,15 @@
                     <div >
                         <form  action="" method="post" role="form" enctype="multipart/form-data" class="php-email-form ">
                             <div>
-                                <label> <strong>Titulo</strong> </label>
+                                <label> <strong>Sube tu archivo</strong> </label>
                                 <div class="form-group mt-3">
-                                    <input type="text" class="form-control" name="titulo" id="titulo" required>
+                                     <input class="btn btn-warning" type="file" name="archivo" require>  
                                 </div>
-                                <label> <strong>descripcion</strong> </label>
-                                <div class="form-group mt-3">
-                                    <input type="text" class="form-control" name="descripcion" id="descripcion"  required>
-                                </div>
-                                
-                            
-                                
                                 <!-- seccion para trabajar con la subida y bajada de archivos  -->
-
                                 <div class="row ">
                                     <div class="col-md-6 container-fluid">
                                         <div class="form-group mt-3">
-                                            <input class="btn btn-warning" type="file" name="archivo">
+
                                         </div>
                                     </div>
                                     <div class="col-md-5 form-group mt-3 mt-md-3">
